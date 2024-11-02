@@ -20,69 +20,101 @@
             font-family: 'Louis George Cafe', Arial, sans-serif;
             font-weight: bold;
             text-align: center;
-            padding: 22px;
-            background-color: #FBFBE8;
-            color: #411B06;
+            padding: 20px;
+            background-color: #FBFBE8; /* لون الخلفية */
+            color: #411B06; /* لون الخط */
         }
 
-        /* تنسيق روابط القائمة */
-        ul li a {
-            font-size: 22px;
-            font-family: 'Louis George Cafe', Arial, sans-serif;
-            font-weight: bold;
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .icon-section {
+            margin: 30px 0;
+        }
+
+        .icon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .icon-container img {
+            width: 80px; /* حجم الأيقونة */
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .icon-container a {
             text-decoration: none;
             color: #411B06;
+            font-size: 20px;
         }
 
-        /* تأثير على الرابط عند التمرير */
-        ul li a:hover {
-            color: #0073e6;
+        .social-section {
+            margin-top: 40px;
+            font-size: 18px;
+            color: #411B06;
         }
 
-        /* تنسيق الأيقونات */
-        ul li a img {
-            width: 24px; /* عرض الصورة */
-            height: 24px; /* ارتفاع الصورة */
-            margin-right: 8px; /* المسافة بين الأيقونة والنص */
-            vertical-align: middle;
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .social-icons a img {
+            width: 40px;
+            height: 40px;
         }
     </style>
 </head>
 <body>
 
-    <!-- إضافة صورة اللوجو -->
-    <img src="https://www.dropbox.com/s/d2p2k73wc6df8n2unti3w/1-3.png?raw=1" style="width: 300px; margin-bottom: 50px;">
-    
     <h1>C’est si bon!</h1>
 
-    <!-- روابط التواصل الاجتماعي والمنيو -->
-    <ul style="list-style-type: none; padding: 0;">
-        <!-- رابط المنيو كنص فقط -->
-        <li><a href="https://drive.google.com/file/d/165xIKbgooR5YBnkUxmsABxaQsMNwmgEg/view" target="_blank">Menu</a></li>
-        
-        <!-- باقي الروابط كأيقونات قابلة للضغط -->
-        <li><a href="https://www.facebook.com/share/wfyiK8mh9AdXqDhw/" target="_blank">
-            <img src="https://drive.google.com/uc?id=134pkYkHuZcDAYhbhU0uaMxgRUHFm-kvS" alt="Facebook Icon">Facebook
-        </a></li>
-        
-        <li><a href="https://www.instagram.com/beurrelune?igsh=MWY0MXYzODgwaHZ2Zw==" target="_blank">
-            <img src="https://path-to-your-instagram-icon.png" alt="Instagram Icon">Instagram
-        </a></li>
-        
-        <li><a href="https://www.tiktok.com/@beurrelune?_t=8quwcRV1NJ9&_r=1" target="_blank">
-            <img src="https://path-to-your-tiktok-icon.png" alt="TikTok Icon">TikTok
-        </a></li>
-        
-        <li><a href="https://www.snapchat.com/add/beurrelune?share_id=n-GY8ppcUdA&locale=en-GB" target="_blank">
-            <img src="https://path-to-your-snapchat-icon.png" alt="Snapchat Icon">SnapChat
-        </a></li>
-        
-        <li><a href="https://your-review-site.com" target="_blank">
-            <img src="https://path-to-your-reviews-icon.png" alt="Reviews Icon">Reviews
-        </a></li>
-    </ul>
+    <!-- قسم الأيقونات الرئيسية -->
+    <div class="icon-section">
+        <div class="icon-container">
+            <a href="https://drive.google.com/file/d/165xIKbgooR5YBnkUxmsABxaQsMNwmgEg/view" target="_blank">
+                <img src="https://path-to-your-menu-icon.png" alt="Menu Icon">
+                <p>Menu</p>
+            </a>
+        </div>
+        <div class="icon-container">
+            <a href="https://your-review-site.com" target="_blank">
+                <img src="https://path-to-your-reviews-icon.png" alt="Reviews Icon">
+                <p>Reviews</p>
+            </a>
+        </div>
+    </div>
 
-    <h2>Powered by: Blackinns</h2>
+    <!-- نص مشاركة التجربة -->
+    <div class="social-section">
+        <p>Enjoyed your visit?<br>Share your experience with us!</p>
+    </div>
+
+    <!-- أيقونات التواصل الاجتماعي -->
+    <div class="social-icons">
+        <a href="https://www.facebook.com/share/wfyiK8mh9AdXqDhw/" target="_blank">
+            <img src="https://path-to-your-facebook-icon.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/beurrelune?igsh=MWY0MXYzODgwaHZ2Zw==" target="_blank">
+            <img src="https://path-to-your-instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="https://www.tiktok.com/@beurrelune?_t=8quwcRV1NJ9&_r=1" target="_blank">
+            <img src="https://path-to-your-tiktok-icon.png" alt="TikTok">
+        </a>
+        <a href="https://www.snapchat.com/add/beurrelune?share_id=n-GY8ppcUdA&locale=en-GB" target="_blank">
+            <img src="https://path-to-your-snapchat-icon.png" alt="SnapChat">
+        </a>
+        <a href="https://wa.me/your-number" target="_blank">
+            <img src="https://path-to-your-whatsapp-icon.png" alt="WhatsApp">
+        </a>
+    </div>
 
 </body>
 </html>
